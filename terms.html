@@ -5,16 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#F4EBD6">
 <title>Terms of Use · Clasp</title>
 <meta name="description" content="The terms for using Clasp, alongside Apple's Standard EULA.">
 <link rel="icon" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/icon.png">
+<link rel="preload" href="fonts/cormorant-garamond-semibold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="./"><img src="images/icon.png" alt="" width="30" height="30"><span>Clasp</span></a>
+    <a class="brand" href="./" aria-label="Clasp home"><img src="images/icon.png" alt="" width="32" height="32"><span>Clasp</span></a>
     <nav class="site-nav" aria-label="Site">
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy</a>
@@ -49,7 +52,7 @@
     <li><a href="#contact">Contact</a></li>
   </ol>
 </nav>
-<main>
+<main id="main">
 <div class="eyebrow">Legal</div>
 <h1>Terms of Use</h1>
 <p class="meta">Effective 21 October 2026</p>
@@ -138,7 +141,7 @@
 
 <h2 id="ownership">What belongs to me, and to others</h2>
 <p>Clasp, including its code, design, cover artwork, page designs, sounds, name and this website, belongs to me and is protected by copyright and other laws, apart from the typefaces below. Your writing belongs to you (see <a href="#your-writing">Your writing</a>).</p>
-<p>Clasp includes the typefaces Caveat, Cormorant Garamond and Cinzel, and this website uses Cormorant Garamond. They belong to their authors and are used under the <a href="https://openfontlicense.org">SIL Open Font License 1.1</a>. Their notices are in Clasp's Settings, under Acknowledgements, and on the <a href="support.html#credits">Support page</a>.</p>
+<p>Clasp includes the typefaces Caveat, Cormorant Garamond and Cinzel, and this website uses them too. They belong to their authors and are used under the <a href="https://openfontlicense.org">SIL Open Font License 1.1</a>. Their notices are in Clasp's Settings, under Acknowledgements, and on the <a href="support.html#credits">Support page</a>.</p>
 <p>Apple, iPhone, iCloud, Touch ID, Face ID and App Store are trademarks of Apple Inc., registered in the U.S. and other countries and regions. Clasp is made by me and isn't made, sponsored or endorsed by Apple.</p>
 
 <h2 id="others">Apple, GitHub and other services</h2>
@@ -202,19 +205,33 @@
 </main>
 </div>
 
-<footer class="site-footer leather">
+<footer class="site-footer leather deep">
   <div class="wrap">
-    <div>
-      <a class="brand" href="./"><img src="images/icon.png" alt="" width="30" height="30"><span>Clasp</span></a>
-      <p>© 2026 Aarihant Malliah. This site uses no cookies, scripts or trackers.</p>
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="./"><img src="images/icon.png" alt="" width="32" height="32"><span>Clasp</span></a>
+        <p class="tagline">A leather pocket diary for iPhone.</p>
+      </div>
+      <div>
+        <h2>Help</h2>
+        <ul>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="mailto:asm.business03@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="support.html#credits">Font credits</a></li>
+        </ul>
+      </div>
     </div>
-    <nav aria-label="Footer">
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="support.html#credits">Font credits</a>
-      <a href="mailto:asm.business03@gmail.com">Contact</a>
-    </nav>
+    <div class="footer-base">
+      <span>© 2026 Aarihant Malliah</span>
+      <span>This site uses no cookies, scripts or trackers.</span>
+    </div>
   </div>
 </footer>
 </body>
